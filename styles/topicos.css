@@ -1,0 +1,58 @@
+.topicos {
+    background: var(--azul-degrade);
+}
+
+.topicos__titulo {
+    text-align: center;
+    color: var(--branco);
+    font-weight: 300;
+    padding: 1em;
+}
+
+.topicos__lista {
+    display: flex;
+    gap: 1em;
+    padding: 1em;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.topicos__item {
+    padding: 1em;
+    background-color: var(--laranja);
+}
+
+.topicos__link {
+    color: var(--branco);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+@media screen and (min-width: 1024px) {
+    .topicos {
+        padding: 0 6em;
+    }
+
+    .topicos__titulo {
+        font-size: 24px;
+    }
+
+    .topicos__link {
+        font-size: 24px;
+    }
+}
+
+@media screen and (min-width: 1728px) {
+    .topicos {
+        padding: 3em 30vw;
+    }
+
+    .topicos__item:hover {
+        background-color: var(--branco);
+    }
+
+    .topicos__link:hover {
+        color: var(--laranja);
+    }
+}
